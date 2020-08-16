@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellidentifier" id="gTV-IL-0wX" customClass="Coll2Cell" customModule="demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigil" translatesAutoresizingMaskIntoConstraints="NO" id="gsU-GE-sce">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="PzF-Hd-QJb"/>
+                            <constraint firstAttribute="height" constant="124" id="Q6u-KK-rwX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTv-hB-i9N">
+                        <rect key="frame" x="0.0" y="124" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="arS-lp-2xI">
+                        <rect key="frame" x="0.0" y="152" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="FsG-ci-jq0"/>
+                            <constraint firstAttribute="width" constant="14" id="d2H-2M-wlL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyi-Ol-a8T">
+                        <rect key="frame" x="20" y="152" width="26.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gsU-GE-sce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Wg-J0-ycE"/>
+                <constraint firstItem="bTv-hB-i9N" firstAttribute="top" secondItem="gsU-GE-sce" secondAttribute="bottom" id="26P-xX-ES9"/>
+                <constraint firstItem="arS-lp-2xI" firstAttribute="top" secondItem="bTv-hB-i9N" secondAttribute="bottom" constant="7" id="J39-oY-Jn3"/>
+                <constraint firstItem="arS-lp-2xI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UvZ-Mf-B5B"/>
+                <constraint firstItem="eyi-Ol-a8T" firstAttribute="leading" secondItem="arS-lp-2xI" secondAttribute="trailing" constant="6" id="ZJf-5y-gVX"/>
+                <constraint firstItem="gsU-GE-sce" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zmf-EA-5cK"/>
+                <constraint firstAttribute="trailing" secondItem="eyi-Ol-a8T" secondAttribute="trailing" constant="68.5" id="d2e-52-sss"/>
+                <constraint firstAttribute="bottom" secondItem="arS-lp-2xI" secondAttribute="bottom" id="h3I-nn-mCu"/>
+                <constraint firstItem="eyi-Ol-a8T" firstAttribute="top" secondItem="bTv-hB-i9N" secondAttribute="bottom" constant="7" id="nE2-9P-fYg"/>
+                <constraint firstAttribute="trailing" secondItem="gsU-GE-sce" secondAttribute="trailing" constant="20" id="q8N-aO-zyT"/>
+                <constraint firstItem="bTv-hB-i9N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yRJ-ks-BCX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="161" height="147"/>
+            <connections>
+                <outlet property="img1" destination="gsU-GE-sce" id="BXv-xb-xtq"/>
+                <outlet property="img2" destination="arS-lp-2xI" id="HUO-vj-a2x"/>
+                <outlet property="lbl1" destination="bTv-hB-i9N" id="Wsm-Io-msj"/>
+                <outlet property="lbl2" destination="eyi-Ol-a8T" id="Zx4-xh-qHu"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bigil" width="46.5" height="62"/>
+    </resources>
+</document>

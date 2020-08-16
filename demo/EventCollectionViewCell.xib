@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellidentifier" id="gTV-IL-0wX" customClass="EventCollectionViewCell" customModule="demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O46-3H-xb2">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="180"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-aF-SBm">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="8tx-yk-mGO"/>
+                            <constraint firstAttribute="width" constant="90" id="UCR-Cy-v1K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Halloween 2K19" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaR-aJ-iKf">
+                        <rect key="frame" x="0.0" y="126" width="90" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="q1m-Jy-fd2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-uQ-jey">
+                        <rect key="frame" x="0.0" y="161" width="57" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O46-3H-xb2" secondAttribute="bottom" id="0jf-Ir-Rr1"/>
+                <constraint firstItem="NaR-aJ-iKf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3cu-Df-rEI"/>
+                <constraint firstItem="NaR-aJ-iKf" firstAttribute="top" secondItem="IM6-aF-SBm" secondAttribute="bottom" constant="6" id="4Td-2j-1Aw"/>
+                <constraint firstItem="O46-3H-xb2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4nh-Lh-HKi"/>
+                <constraint firstItem="eb1-uQ-jey" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DLS-fi-I7A"/>
+                <constraint firstItem="IM6-aF-SBm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OG7-c8-BDn"/>
+                <constraint firstItem="IM6-aF-SBm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UKi-oy-hjC"/>
+                <constraint firstItem="O46-3H-xb2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y00-Xe-ldm"/>
+                <constraint firstAttribute="trailing" secondItem="IM6-aF-SBm" secondAttribute="trailing" id="gNY-He-Qml"/>
+                <constraint firstItem="eb1-uQ-jey" firstAttribute="top" secondItem="NaR-aJ-iKf" secondAttribute="bottom" constant="6" id="nWH-gH-MA3"/>
+                <constraint firstAttribute="trailing" secondItem="O46-3H-xb2" secondAttribute="trailing" id="qv9-9s-TOB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="img" destination="IM6-aF-SBm" id="JS8-JV-mFu"/>
+                <outlet property="lbl1" destination="NaR-aJ-iKf" id="lC7-Eu-tkV"/>
+                <outlet property="lbl2" destination="eb1-uQ-jey" id="cet-xe-mtE"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="135"/>
+        </collectionViewCell>
+    </objects>
+</document>
